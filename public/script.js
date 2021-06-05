@@ -68,7 +68,7 @@ btnGetRecentShortUrls.onclick = () => {
         .then(data => createTable(data))
         .catch((err) => {
             console.log(err);
-            alert('Currenlty No urls have been minified. Try getting one using Mini Url');
+            alert('Currenlty No urls have been minified. Try getting one using MiniFi Url');
         });
 };
 
