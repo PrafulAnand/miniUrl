@@ -35,8 +35,8 @@ router.post('/', (req, res) => {
     if(!urlExists){
     const generatedShortUrlID = shortid.generate();
     console.log(generatedShortUrlID);
-    urls.push({longUrl:longUrlVal, shortIdVal: generatedShortUrlID, newUrl: `http://localhost:3000/urls/${generatedShortUrlID}`});
-    res.send({newUrl:`http://localhost:3000/urls/${generatedShortUrlID}`});
+    urls.push({longUrl:longUrlVal, shortIdVal: generatedShortUrlID, newUrl: `https://minifiurl.herokuapp.com/urls/${generatedShortUrlID}`});
+    res.send({newUrl:`https://minifiurl.herokuapp.com/urls/${generatedShortUrlID}`});
     }
 });
 
