@@ -1,0 +1,85 @@
+h1{
+text-align:center;
+padding: 50px;
+}
+
+
+.url-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 30px
+}
+
+.url-textBox {
+    width: 50vw;
+    height: 3em;
+    border-radius: 10px;
+    margin: 10px
+}
+
+.get-urls{
+    margin: 10px;
+}
+
+.shortened-urls{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:20px;
+    padding:20px;
+}
+
+.shorturl-result{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 12px 15px
+}
+
+table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    font-weight: bold;
+    background-color: #f3f3f3;
+    padding: 12px 15px; 
+}
+
+table thead tr{
+    background-color: #009879;
+    color: #ffffff;
+    text-align: center;
+}
+
+table tr, td{
+    padding: 12px 15px; 
+}
+
+table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+button{
+    padding: 10px;
+  font-size: small;
+  margin: 10px;
+  font-weight: bold;
+  color: white;
+  box-shadow: 5px 5px 5px grey;
+  background-color: #333;
+}

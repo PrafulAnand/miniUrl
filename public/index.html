@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini URL</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <header>
+        <h1 class ="miniUrl-title">Mini URL - Get Small Alias for Long Urls</h1>
+    </header>
+    <div class = "url-Container">
+        <input type ="text" class ="url-textBox" id="urlInput" placeholder="Enter or Paste long URL">
+        <button class ="get-urls" id ="btngenerateShortUrl">Get Mini URL</button>
+        <button class ="reset" id ="resetInputs">Reset</button>
+        <p id = "resultantShortUrl" class ="shorturl-result"></p>
+    </div>
+    <div class = "no-new-urls" id ="noNewUrlsContainer">
+    </div>
+    <div class = "shortened-urls" id ="shortenedUrlsContainer">
+        <button class ="buttons-minUrl" id ="getRecentUrlsButton">Recent Short Urls</button>
+    </div>
+    <script src = "script.js"></script>
+</body>
+</html>
