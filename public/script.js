@@ -8,6 +8,8 @@ const btnGetRecentShortUrls = document.getElementById('getRecentUrlsButton');
 const recentUrlsTable = document.getElementById('recentShortUrlsTable');
 const noNewurlsContainer = document.getElementById('noNewUrlsContainer');
 const shortenedUrlsContainer = document.getElementById('shortenedUrlsContainer');
+const imgtag = document.getElementById('qrCodeLink');
+
 
 function isUrlValid(userInput) {
     var res = userInput.match(/(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g);
@@ -50,7 +52,14 @@ const getShortUrl = (longUrl) => {
     btnShortUrlId.disabled = true;
     postRequestData(longUrl)
         .then(response => response.json())
-        .then(data => resultshortUrl.innerText = data.newUrl)
+        .then(data => {
+            resultshortUrl.innerText = data.newUrl;
+        if(data.imgsrc === 'Unable to generate QR Code'){
+imgtag.setAttribute('alt','Unable to generate QR Code');
+        }else{
+            imgtag.setAttribute('src', data.imgsrc);
+        }
+    });
 };
 
 /*reset */
