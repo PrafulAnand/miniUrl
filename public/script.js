@@ -67,7 +67,7 @@ resetInputs.onclick = () => {
     btnShortUrlId.disabled = false;
     urlInput.value = "";
     urlOutput.innerText = "";
-    imgtag.setAttribute('src', '');
+    imgtag.removeAttribute('src', '');
     imgtag.setAttribute('alt','Your QR Code will Load here');
 };
 
