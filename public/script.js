@@ -20,7 +20,6 @@ function isUrlValid(userInput) {
 }
 
 function appendHttpsIfMissing(url) {
-    const lowerCaseUrl
     if (!url.startsWith('https://'))
         return `https://${url}`;
     else
