@@ -20,17 +20,19 @@ function isUrlValid(userInput) {
 }
 
 function appendHttpsIfMissing(url) {
-    if (!url.startsWith('https'))
+    const lowerCaseUrl
+    if (!url.startsWith('https://'))
         return `https://${url}`;
     else
         return url;
 }
 
 btnShortUrlId.onclick = () => {
-    if (urlInput.value !== "" && isUrlValid(appendHttpsIfMissing((urlInput.value)))) {
-        getShortUrl(appendHttpsIfMissing((urlInput.value)));
+    const urlValue = urlInput.value.toLowerCase();
+    if (urlValue !== "" && isUrlValid(appendHttpsIfMissing((urlValue)))) {
+        getShortUrl(appendHttpsIfMissing((urlValue)));
     } else {
-        alert("Not a valid Input value")
+        alert("Not a valid Input value");
     }
 };
 
